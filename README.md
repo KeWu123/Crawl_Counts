@@ -1,38 +1,41 @@
-# What a Crawl Counts
+# Crawl_Counts
 
-Code and frozen numeric inputs for counting-target coverage and matched training/evaluation audits.
+Reproducibility companion for **What a Crawl Counts: Auditing Counting-Unit Sensitivity in Web Corpora**.
 
 ## Quick start
 
-Run `python -m pip install -r requirements-core.txt`, then `python reproduce_core.py`.
-Read `report/REPORT.md` for all six topics. Optional Figure 2(a,b) reconstruction uses `requirements-plot.txt` and `python reproduce_core.py --coverage-only --plot`.
+```sh
+python -m pip install -r requirements-core.txt
+python reproduce_core.py
+```
 
-The source directory contains the original implementations; full training additionally needs the identified raw source releases. This repository contains the compact numerical reproduction inputs.
+The offline entry checks payload hashes and reconstructs the 77-cell training/evaluation crossing, 12 control values, 900 supplementary error cells, four paired H intervals, and reference coverage. It uses frozen per-record laws, labels and predictions and starts no fitting.
 
-Review distribution uses a permitted anonymous snapshot; the author repository itself is private.
+Read [the core report](report/REPORT.md) and [all native-topic ranges](report/all_topic_ranges.csv). All six topics are reported for each declared candidate set, including compatible ranges. Health is an exploratory illustration. The .50/.70 sets have minimum health-share shortfalls of about 2.85/2.68 percentage points over every allowed convex mixture.
 
----
+## Rebuild the coverage panels
 
-# Anonymous counting-target audit material
+```sh
+python -m pip install -r requirements-plot.txt
+python reproduce_core.py --coverage-only --plot
+```
 
-This current-version numeric artifact contains partitions/record IDs, all eleven full-corpus CC-News training-weight definitions, actual normalized test laws, individual-seed predictions, 60 supplementary-fit checkpoint predictions, controls, candidate mixture parameters and LP certificates. It contains no raw news text, model weights, user review history or author-identifying local paths.
+Generated reports and standalone Figure 2(a,b) PNG/SVG panels go under `recomputed/`. `report/` contains the frozen report snapshot.
 
-Install `requirements.txt`, then run `python recompute.py`. The offline entry checks file hashes and reconstructs the 77-cell training/evaluation crossing, 12 displayed control values, 900 supplementary error cells, four joint paired-bootstrap H intervals, all 3Sources topic ranges/coverage and the original full-density CC-News radius. It starts no fitting. The partition and training weight arrays allow inspection of the population being counted.
+## Contents
 
-`cc_training_weights.npz` stores inverse full-corpus group sizes before the registered minibatch/global normalization, together with train/test record indices. `cc_evaluation.npz` stores the full-corpus laws restricted and renormalized on the same tests. They are different stages. `matched_inputs.npz` preserves both models and both test laws on matched IDs. The zero BBC-linear refit change is specific to these saved predictions.
+- `cc_training_weights.npz`: eleven full-corpus training-weight definitions and record indices, before the registered normalization.
+- `cc_evaluation.npz`, `bbc_evaluation.npz`: laws restricted and renormalized on fixed test records.
+- Prediction arrays: saved per-seed results for the original crossing, controls and extensions.
+- `matched_inputs.npz`: both models and both laws on shared IDs for 5,000 joint test-cluster resamples per H setting.
+- `content_laws.npz`, `reference_evaluation.npz`: 3Sources candidate laws and supplied story/topic reference.
+- `source/`: original implementations for method inspection. Full training additionally requires the raw-source releases and original project configuration; the portable numeric entry is self-contained.
+- `editable_tables/`: native LaTeX tables and numeric styles.
 
-The new 3Sources rules align exact released stems, use positive log-TF / smooth IDF / L2 rows, and connect cosine >=.50 or >=.70. Neither story IDs nor topic labels enter construction or center optimization; the earlier reference baseline had already been seen. Supplied IDs provide a finite reference, not universal semantic truth. LP centers are convex candidate mixtures, not arbitrary free distributions. H intervals are post-hoc conditional percentile descriptions on fixed models/splits; the figure's small resample cloud is not a 95% contour. Exact candidate statistic ranges, TV-radius bands and bootstrap intervals are distinct objects.
+Full environment pins are in `requirements.txt`; `requirements-core.txt` lists the smaller numeric-entry dependency set. Source notices and fingerprints identify the public research releases and usage conditions. Raw news text and model parameters are excluded.
 
-Numeric reproduction does not repeat training or demonstrate raw-data semantic correctness. Raw source fingerprints and original 3Sources/BBC notices identify the underlying public research releases and their conditions. No original raw articles are redistributed here. This archive is prepared locally; reviewer access requires attaching or hosting it through the permitted anonymous submission mechanism. No upload or public release is performed by this build script.
+## Interpretation and access
 
-Original implementation files are included under `source/` for method inspection, with their original relative project layout. They cover source partitioning/features, the validated fit engine, the BBC adaptation, the full-density LP and the label-blind content/joint-bootstrap follow-up. They are byte-preserved source files, not an assertion that full training can run from this numeric-only archive: full training requires the published raw sources and the original project inputs. The standalone `recompute.py` is the executable offline reviewer entry.
+Exact candidate ranges, center-radius bands and paired bootstrap intervals describe different objects. A zero scalar gap permits that individual mean; it does not establish joint attainability of the six-topic vector. H intervals are post-hoc conditional descriptions with models, partitions and splits fixed.
 
-Editable native LaTeX tables and their stylesheet are under editable_tables/. Black bold marks unrounded numerical minima within declared comparison groups, not significance. No delta columns or numeric outcome colors were added.
-
-## Start here: core audit report
-
-Read `report/REPORT.md` and `report/all_topic_ranges.csv`. They include all six native topics for each of the three declared sets, the scalar distance from each reference to its candidate envelope, and the unavoidable health shortfall for every convex mixture. Health is an exploratory illustration; topic outcomes are retained together.
-
-Minimal numeric entry: install NumPy and threadpoolctl (`requirements-core.txt`), then run `python reproduce_core.py`. This checks the payload and recomputes Table 2, the four paired H intervals and coverage from frozen inputs. Original environment pins remain in `requirements.txt`. Optional plot entry: install `requirements-plot.txt`, then run `python reproduce_core.py --coverage-only --plot`. Generated reports go under `recomputed/`. Full training is not required for these core checks.
-
-This is the review-ready local archive. Its reviewer delivery URL or permitted submission attachment is determined by the author; it has not been uploaded by these scripts.
+This is the author's public GitHub repository. The double-blind manuscript uses its portable artifact entry; an anonymous reviewer link requires a separately anonymized delivery channel.
