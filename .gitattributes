@@ -1,0 +1,2 @@
+# Frozen artifact payloads are checksummed byte-for-byte.
+* -text

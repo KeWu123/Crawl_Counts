@@ -51,7 +51,8 @@
     "SOURCE_3SOURCES.txt": "75f79e4c29793f0c43039d316cab8cff9e90ea840ebcd21819709cf0007e83a2",
     "SOURCE_BBC.md": "2edf56af81a7a437d51ddbd1d8f66572ce435c2337c0525b9f3ad7ffdfbe5c3c",
     "term_vocabulary.txt": "71695b3ba09c823e4ba99d5a5a7b140785cd260feeb1dbe8253bda65adda2685",
-    ".gitignore": "986b564cde1968b9223637bc6ac02dbac2ed90ed45b2d0a772bdd8b0893acdcd"
+    ".gitignore": "986b564cde1968b9223637bc6ac02dbac2ed90ed45b2d0a772bdd8b0893acdcd",
+    ".gitattributes": "51563e7e9c3aea422450b027a59443f9b4f864f32472a2f1f533516120722eb2"
   },
   "anonymous_local_numeric_artifact": true,
   "scope": "finite supplied reference and frozen predictions; no new training",
