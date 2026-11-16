@@ -1,0 +1,38 @@
+% Derived from audit_task_table.tex; numeric strings and bold marks are retained.
+\begingroup
+\PaperTableSetup
+\begin{tabularx}{\linewidth}{llYYYYYYY}
+\toprule
+\rowcolor{PaperTableHead}
+\multicolumn{2}{l}{\PaperTableHeading{Training weights}} & \multicolumn{7}{c}{\PaperTableHeading{Evaluation law}\enspace(mean test error $\downarrow$)}\\
+\rowcolor{PaperTableHead}
+\PaperTableHeading{Family} & \PaperTableHeading{Setting} & Documents & URL & Title + day & Title & Content & Mixture & Outlet\\
+\midrule
+\rowcolor{PaperTableReference}
+\PaperTableFamily{Document} & Documents & 0.2524 & 0.2338 & 0.2469 & 0.2453 & 0.2523 & 0.2399 & 0.2629\\
+\midrule
+\rowcolor{PaperTableContent}
+ & $\tau=$0.50 & 0.2486 & \PaperBestMean{0.2293} & \PaperBestMean{0.2433} & 0.2420 & 0.2482 & \PaperBestMean{0.2360} & 0.2568\\
+\rowcolor{PaperTableContent}
+ & $\tau=$0.60 & 0.2488 & 0.2296 & 0.2436 & 0.2421 & 0.2487 & 0.2362 & 0.2575\\
+\rowcolor{PaperTableContent}
+ & $\tau=$0.70 & 0.2499 & 0.2308 & 0.2448 & 0.2432 & 0.2496 & 0.2373 & 0.2578\\
+\rowcolor{PaperTableContent}
+ & $\tau=$0.80 & \PaperBestMean{0.2481} & 0.2298 & 0.2436 & 0.2419 & 0.2479 & 0.2362 & 0.2573\\
+\rowcolor{PaperTableContent}
+ & $\tau=$0.85 & 0.2481 & 0.2297 & 0.2433 & \PaperBestMean{0.2416} & \PaperBestMean{0.2478} & 0.2360 & 0.2565\\
+\rowcolor{PaperTableContent}
+ & $\tau=$0.90 & 0.2482 & 0.2298 & 0.2434 & 0.2417 & 0.2481 & 0.2361 & \PaperBestMean{0.2556}\\
+\rowcolor{PaperTableContent}
+\multirow{-7}{*}{\PaperTableFamily{Content}} & $\tau=$0.95 & 0.2509 & 0.2325 & 0.2451 & 0.2433 & 0.2507 & 0.2382 & 0.2571\\
+\midrule
+\rowcolor{PaperTableMeta}
+ & URL & 0.2520 & 0.2298 & 0.2457 & 0.2448 & 0.2510 & 0.2376 & 0.2585\\
+\rowcolor{PaperTableMeta}
+\multirow{-2}{*}{\PaperTableFamily{Metadata}} & Title & 0.2503 & 0.2321 & 0.2459 & 0.2442 & 0.2505 & 0.2385 & 0.2595\\
+\midrule
+\rowcolor{PaperTablePublisher}
+\PaperTableFamily{Publisher} & Outlet & 0.2900 & 0.2670 & 0.2852 & 0.2835 & 0.2885 & 0.2757 & 0.2682\\
+\bottomrule
+\end{tabularx}
+\endgroup

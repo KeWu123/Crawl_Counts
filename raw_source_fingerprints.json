@@ -1,0 +1,118 @@
+{
+  "CC_News": [
+    {
+      "file": "shard0.parquet",
+      "rows": 141649,
+      "sha256": "5cda9a2b0b40a9c9438ae02168b16beb61e52449a895869515501962c5aeb977",
+      "date_min": "2017-01-01 00:00:00",
+      "date_max": "2018-10-22 00:00:00",
+      "parquet_metadata": {
+        "huggingface": "{\"info\": {\"features\": {\"title\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"text\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"domain\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"date\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"description\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"url\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"image_url\": {\"dtype\": \"string\", \"_type\": \"Value\"}}}}"
+      }
+    },
+    {
+      "file": "shard1.parquet",
+      "rows": 141648,
+      "sha256": "1d33583fdd82fa28a7aa961a633aeb63be90fdac8f47c1893daf630c9a5f074a",
+      "date_min": "2017-01-01 00:00:00",
+      "date_max": "2018-12-07 00:00:00",
+      "parquet_metadata": {
+        "huggingface": "{\"info\": {\"features\": {\"title\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"text\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"domain\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"date\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"description\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"url\": {\"dtype\": \"string\", \"_type\": \"Value\"}, \"image_url\": {\"dtype\": \"string\", \"_type\": \"Value\"}}}}"
+      }
+    }
+  ],
+  "BBC": {
+    "dataset": "BBC fulltext author release",
+    "url": "https://raw.githubusercontent.com/derekgreene/bbc-datasets/main/raw/bbc-fulltext.zip",
+    "git_blob_sha1": "2e2ee8d266d6e215ae4b481c27e19f726e147bcb",
+    "zip_sha256": "a351031a62325b3d7ff13146eeb035c22feca8290913b5183d1ff3be35109495",
+    "source_readme_sha256": "2edf56af81a7a437d51ddbd1d8f66572ce435c2337c0525b9f3ad7ffdfbe5c3c",
+    "rights": "BBC content copyright; author README permits non-commercial research; repository code license does not relicense article text",
+    "n": 2225,
+    "native_classes": [
+      "business",
+      "entertainment",
+      "politics",
+      "sport",
+      "tech"
+    ],
+    "native_class_counts": [
+      510,
+      386,
+      417,
+      511,
+      401
+    ],
+    "n_train": 1785,
+    "n_test": 440,
+    "test_union_groups": 411,
+    "train_class_counts": [
+      417,
+      326,
+      313,
+      408,
+      321
+    ],
+    "test_class_counts": [
+      93,
+      60,
+      104,
+      103,
+      80
+    ],
+    "shingle_eligible": 2222,
+    "period_rule_not_applied_to_native_curated_benchmark": true,
+    "metadata_unavailable": [
+      "URL",
+      "calendar date",
+      "multiple publishers"
+    ],
+    "title_excluded_from_classifier_body": true,
+    "split": "union of exact normalized title and content .90 components; seed7, shared across conditions",
+    "repetitions": {
+      "title": {
+        "K": 2095,
+        "kappa": 1.062052505966587,
+        "member": 0.11685393258426967,
+        "cluster": 0.06205250596658711,
+        "extra": 0.05842696629213484,
+        "TV_vs_documents": 0.05480142661768254
+      },
+      "content": {
+        "K": 2072,
+        "kappa": 1.0738416988416988,
+        "member": 0.13752808988764045,
+        "cluster": 0.07384169884169885,
+        "extra": 0.06876404494382027,
+        "TV_vs_documents": 0.0636863910459416
+      }
+    },
+    "TV": {
+      "documents": {
+        "documents": 0.0,
+        "title": 0.05480142661768254,
+        "content": 0.0636863910459416
+      },
+      "title": {
+        "documents": 0.05480142661768254,
+        "title": 0.0,
+        "content": 0.017465052846914422
+      },
+      "content": {
+        "documents": 0.0636863910459416,
+        "title": 0.017465052846914422,
+        "content": 0.0
+      }
+    },
+    "midpoint_R": 0.008732526423457237,
+    "bound_B": 0.008732526423457211,
+    "feature_shape": [
+      2225,
+      131072
+    ],
+    "feature_nnz": 682737,
+    "implementation_sha256": "26b903bcef312ad929eabbbff9143fcf8ccbb0b3085a7887d279603d4697db67",
+    "corpus_protocol_sha256": "0e3070d0f2b2828b66206b0c29a4603ddf75d1ceb83ef00cdcb92def7f72eb35"
+  },
+  "3Sources_zip_sha256": "dea0ab41c48f1a50dbce855f7f9f783dd57bb0a3a3636f53f0c665678fb48659"
+}

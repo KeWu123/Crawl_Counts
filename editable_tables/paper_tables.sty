@@ -1,0 +1,41 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{paper_tables}[2026/11/14 Structural styling for the audit tables]
+\RequirePackage{xcolor}
+\RequirePackage{colortbl}
+\RequirePackage{booktabs}
+\RequirePackage{array}
+\RequirePackage{tabularx}
+\RequirePackage{multirow}
+
+% Structural colors derived from Figure 1's blue and warm accent.
+% No cell color encodes an outcome, rank, or significance level.
+\definecolor{PaperTableHead}{HTML}{E5EFF5}
+\definecolor{PaperTableMeta}{HTML}{F2F7FA}
+\definecolor{PaperTableContent}{HTML}{F7F7F7}
+\definecolor{PaperTablePublisher}{HTML}{FCF6EE}
+\definecolor{PaperTableReference}{HTML}{FFFFFF}
+\definecolor{PaperTableInk}{HTML}{17252D}
+\definecolor{PaperTableRule}{HTML}{54636C}
+
+% X columns have real cell widths, so colortbl fills form continuous bands.
+% Fixed precision and right alignment retain aligned decimal positions.
+\newcolumntype{Y}{>{\raggedleft\arraybackslash}X}
+\newcommand{\PaperTableSetup}{%
+  \small
+  \color{black}%
+  \renewcommand{\arraystretch}{1.0}%
+  \setlength{\extrarowheight}{0.4pt}%
+  \setlength{\tabcolsep}{4.0pt}%
+  \setlength{\aboverulesep}{0pt}%
+  \setlength{\belowrulesep}{0pt}%
+  \setlength{\cmidrulesep}{0pt}%
+  \setlength{\heavyrulewidth}{0.7pt}%
+  \setlength{\lightrulewidth}{0.35pt}%
+  \setlength{\cmidrulewidth}{0.35pt}%
+  \arrayrulecolor{PaperTableRule}%
+}
+\newcommand{\PaperTableHeading}[1]{{\color{PaperTableInk}\bfseries #1}}
+\newcommand{\PaperTableFamily}[1]{{\color{PaperTableInk}\itshape #1}}
+
+% Numerical rank only; no uncertainty or neighboring cell inherits this weight.
+\newcommand{\PaperBestMean}[1]{\textcolor{black}{\textbf{#1}}}

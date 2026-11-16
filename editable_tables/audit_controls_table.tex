@@ -1,0 +1,16 @@
+{\PaperTableSetup
+\begin{tabularx}{\columnwidth}{@{}lYYY@{}}
+\toprule
+\rowcolor{PaperTableHead} (a) Training weights & 24 epochs & 48 epochs & 96 epochs \\
+\midrule
+Documents & 0.2469 & 0.2472 & 0.2456 \\
+Content, $\tau=0.90$ & \PaperBestMean{0.2434} & \PaperBestMean{0.2425} & \PaperBestMean{0.2424} \\
+Outlet & 0.2852 & 0.2890 & 0.2901 \\
+\midrule
+\rowcolor{PaperTableHead} \multicolumn{3}{@{}l}{(b) Weight assignment (24 epochs)} & Error \\
+\midrule
+\multicolumn{3}{@{}l}{Unrestricted (10 permutations)} & 0.2616 \\
+\multicolumn{3}{@{}l}{Unrestricted (5 permutations)} & \PaperBestMean{0.2607} \\
+\multicolumn{3}{@{}l}{Within class (5 permutations)} & 0.2759 \\
+\bottomrule
+\end{tabularx}}

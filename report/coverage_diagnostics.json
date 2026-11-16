@@ -1,0 +1,281 @@
+{
+  "sets": [
+    {
+      "set": "baseline",
+      "candidates": [
+        "documents",
+        "publisher"
+      ],
+      "R": 0.018987341772151937,
+      "reference_TV": 0.13024609951498062,
+      "epsilon": 0.1285601265822785,
+      "outside_count": 5,
+      "topic_count": 6,
+      "health": {
+        "candidate_set": "baseline",
+        "topic": "health",
+        "candidate_min_pct": 9.971594748676102,
+        "candidate_max_pct": 10.126582278481019,
+        "story_reference_pct": 12.980769230769232,
+        "distance_to_range_pp": 2.854186952288214,
+        "direction": "underestimate",
+        "reference_outside": true,
+        "center_pct": 10.049088513578562,
+        "radius_band_low_pct": 8.15035433636337,
+        "radius_band_high_pct": 11.947822690793755,
+        "all_candidate_means_below_reference": true,
+        "minimum_shortfall_pp": 2.854186952288214
+      }
+    },
+    {
+      "set": "content050",
+      "candidates": [
+        "documents",
+        "publisher",
+        "content050"
+      ],
+      "R": 0.0895427072642263,
+      "reference_TV": 0.1299895247988574,
+      "epsilon": 0.1285601265822785,
+      "outside_count": 4,
+      "topic_count": 6,
+      "health": {
+        "candidate_set": "content050",
+        "topic": "health",
+        "candidate_min_pct": 9.971594748676102,
+        "candidate_max_pct": 10.126582278481019,
+        "story_reference_pct": 12.980769230769232,
+        "distance_to_range_pp": 2.854186952288214,
+        "direction": "underestimate",
+        "reference_outside": true,
+        "center_pct": 9.985795294542319,
+        "radius_band_low_pct": 1.0315245681196892,
+        "radius_band_high_pct": 18.940066020964952,
+        "all_candidate_means_below_reference": true,
+        "minimum_shortfall_pp": 2.854186952288214
+      }
+    },
+    {
+      "set": "content070",
+      "candidates": [
+        "documents",
+        "publisher",
+        "content070"
+      ],
+      "R": 0.02339693025701707,
+      "reference_TV": 0.12865236726311258,
+      "epsilon": 0.1285601265822785,
+      "outside_count": 4,
+      "topic_count": 6,
+      "health": {
+        "candidate_set": "content070",
+        "topic": "health",
+        "candidate_min_pct": 9.971594748676102,
+        "candidate_max_pct": 10.303687635574843,
+        "story_reference_pct": 12.980769230769232,
+        "distance_to_range_pp": 2.6770815951943887,
+        "direction": "underestimate",
+        "reference_outside": true,
+        "center_pct": 10.10787289484609,
+        "radius_band_low_pct": 7.768179869144383,
+        "radius_band_high_pct": 12.447565920547797,
+        "all_candidate_means_below_reference": true,
+        "minimum_shortfall_pp": 2.6770815951943887
+      }
+    }
+  ],
+  "topics": [
+    "business",
+    "entertainment",
+    "health",
+    "politics",
+    "sport",
+    "tech"
+  ],
+  "rows": [
+    {
+      "candidate_set": "baseline",
+      "topic": "business",
+      "candidate_min_pct": 27.320675105485222,
+      "candidate_max_pct": 27.505504258697293,
+      "story_reference_pct": 25.0,
+      "distance_to_range_pp": 2.32067510548522,
+      "direction": "overestimate",
+      "reference_outside": true
+    },
+    {
+      "candidate_set": "baseline",
+      "topic": "entertainment",
+      "candidate_min_pct": 14.419609154117193,
+      "candidate_max_pct": 14.451476793248952,
+      "story_reference_pct": 14.423076923076922,
+      "distance_to_range_pp": 0.0,
+      "direction": "inside",
+      "reference_outside": false
+    },
+    {
+      "candidate_set": "baseline",
+      "topic": "health",
+      "candidate_min_pct": 9.971594748676102,
+      "candidate_max_pct": 10.126582278481019,
+      "story_reference_pct": 12.980769230769232,
+      "distance_to_range_pp": 2.854186952288214,
+      "direction": "underestimate",
+      "reference_outside": true
+    },
+    {
+      "candidate_set": "baseline",
+      "topic": "politics",
+      "candidate_min_pct": 11.568175333549021,
+      "candidate_max_pct": 11.708860759493678,
+      "story_reference_pct": 11.778846153846153,
+      "distance_to_range_pp": 0.06998539435247586,
+      "direction": "underestimate",
+      "reference_outside": true
+    },
+    {
+      "candidate_set": "baseline",
+      "topic": "sport",
+      "candidate_min_pct": 24.050632911392423,
+      "candidate_max_pct": 24.108862138072215,
+      "story_reference_pct": 21.39423076923077,
+      "distance_to_range_pp": 2.6564021421616513,
+      "direction": "overestimate",
+      "reference_outside": true
+    },
+    {
+      "candidate_set": "baseline",
+      "topic": "tech",
+      "candidate_min_pct": 12.341772151898741,
+      "candidate_max_pct": 12.426254366888227,
+      "story_reference_pct": 14.423076923076922,
+      "distance_to_range_pp": 1.9968225561886959,
+      "direction": "underestimate",
+      "reference_outside": true
+    },
+    {
+      "candidate_set": "content050",
+      "topic": "business",
+      "candidate_min_pct": 27.320675105485222,
+      "candidate_max_pct": 30.45045045045045,
+      "story_reference_pct": 25.0,
+      "distance_to_range_pp": 2.32067510548522,
+      "direction": "overestimate",
+      "reference_outside": true
+    },
+    {
+      "candidate_set": "content050",
+      "topic": "entertainment",
+      "candidate_min_pct": 14.054054054054054,
+      "candidate_max_pct": 14.451476793248952,
+      "story_reference_pct": 14.423076923076922,
+      "distance_to_range_pp": 0.0,
+      "direction": "inside",
+      "reference_outside": false
+    },
+    {
+      "candidate_set": "content050",
+      "topic": "health",
+      "candidate_min_pct": 9.971594748676102,
+      "candidate_max_pct": 10.126582278481019,
+      "story_reference_pct": 12.980769230769232,
+      "distance_to_range_pp": 2.854186952288214,
+      "direction": "underestimate",
+      "reference_outside": true
+    },
+    {
+      "candidate_set": "content050",
+      "topic": "politics",
+      "candidate_min_pct": 10.945945945945946,
+      "candidate_max_pct": 11.708860759493678,
+      "story_reference_pct": 11.778846153846153,
+      "distance_to_range_pp": 0.06998539435247586,
+      "direction": "underestimate",
+      "reference_outside": true
+    },
+    {
+      "candidate_set": "content050",
+      "topic": "sport",
+      "candidate_min_pct": 21.08108108108108,
+      "candidate_max_pct": 24.108862138072215,
+      "story_reference_pct": 21.39423076923077,
+      "distance_to_range_pp": 0.0,
+      "direction": "inside",
+      "reference_outside": false
+    },
+    {
+      "candidate_set": "content050",
+      "topic": "tech",
+      "candidate_min_pct": 12.341772151898741,
+      "candidate_max_pct": 13.468468468468469,
+      "story_reference_pct": 14.423076923076922,
+      "distance_to_range_pp": 0.9546084546084521,
+      "direction": "underestimate",
+      "reference_outside": true
+    },
+    {
+      "candidate_set": "content070",
+      "topic": "business",
+      "candidate_min_pct": 27.320675105485222,
+      "candidate_max_pct": 27.657266811279836,
+      "story_reference_pct": 25.0,
+      "distance_to_range_pp": 2.32067510548522,
+      "direction": "overestimate",
+      "reference_outside": true
+    },
+    {
+      "candidate_set": "content070",
+      "topic": "entertainment",
+      "candidate_min_pct": 14.419609154117193,
+      "candidate_max_pct": 14.53362255965294,
+      "story_reference_pct": 14.423076923076922,
+      "distance_to_range_pp": 0.0,
+      "direction": "inside",
+      "reference_outside": false
+    },
+    {
+      "candidate_set": "content070",
+      "topic": "health",
+      "candidate_min_pct": 9.971594748676102,
+      "candidate_max_pct": 10.303687635574843,
+      "story_reference_pct": 12.980769230769232,
+      "distance_to_range_pp": 2.6770815951943887,
+      "direction": "underestimate",
+      "reference_outside": true
+    },
+    {
+      "candidate_set": "content070",
+      "topic": "politics",
+      "candidate_min_pct": 11.568175333549021,
+      "candidate_max_pct": 11.82212581344903,
+      "story_reference_pct": 11.778846153846153,
+      "distance_to_range_pp": 0.0,
+      "direction": "inside",
+      "reference_outside": false
+    },
+    {
+      "candidate_set": "content070",
+      "topic": "sport",
+      "candidate_min_pct": 23.53579175704991,
+      "candidate_max_pct": 24.108862138072215,
+      "story_reference_pct": 21.39423076923077,
+      "distance_to_range_pp": 2.1415609878191413,
+      "direction": "overestimate",
+      "reference_outside": true
+    },
+    {
+      "candidate_set": "content070",
+      "topic": "tech",
+      "candidate_min_pct": 12.147505422993502,
+      "candidate_max_pct": 12.426254366888227,
+      "story_reference_pct": 14.423076923076922,
+      "distance_to_range_pp": 1.9968225561886959,
+      "direction": "underestimate",
+      "reference_outside": true
+    }
+  ],
+  "selection": "Health is an exploratory illustration from the baseline audit; all six native topics are reported.",
+  "interpretation": "For each topic separately, mixture expectations fill the interval between candidate means. A positive distance is unavoidable for every mixture in that declared set; zero does not establish a jointly attainable six-topic vector.",
+  "units": "Shares are percent; scalar distances and shortfalls are percentage points; R/reference_TV/epsilon are probability units.",
+  "new_training_fits": 0
+}

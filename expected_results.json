@@ -1,0 +1,697 @@
+{
+  "crossing": {
+    "documents": {
+      "documents": 0.2524118738404451,
+      "url": 0.2338178316577625,
+      "title_date": 0.246947360517919,
+      "title": 0.245295205520476,
+      "lsh": 0.2523403984900109,
+      "mixture": 0.23987521892270153,
+      "outlet": 0.2628903179091086
+    },
+    "tau=0.50": {
+      "documents": 0.24860853432281999,
+      "url": 0.22934355673022966,
+      "title_date": 0.24329318758765484,
+      "title": 0.2419934071808288,
+      "lsh": 0.24824740174848858,
+      "mixture": 0.23598257064661854,
+      "outlet": 0.2568195418620761
+    },
+    "tau=0.60": {
+      "documents": 0.2487940630797773,
+      "url": 0.2295554712439743,
+      "title_date": 0.2436263788376256,
+      "title": 0.24212974139511134,
+      "lsh": 0.24865108825784404,
+      "mixture": 0.2361694121501311,
+      "outlet": 0.2575410363050217
+    },
+    "tau=0.70": {
+      "documents": 0.24990723562152128,
+      "url": 0.23080240604079436,
+      "title_date": 0.24478454884013368,
+      "title": 0.24316984340753361,
+      "lsh": 0.24963070085388,
+      "mixture": 0.2373177313605369,
+      "outlet": 0.2577691348823866
+    },
+    "tau=0.80": {
+      "documents": 0.24805194805194802,
+      "url": 0.22975654887084718,
+      "title_date": 0.2436055109096525,
+      "title": 0.24188326644325336,
+      "lsh": 0.24788318680893676,
+      "mixture": 0.23615497110699452,
+      "outlet": 0.25725470777548753
+    },
+    "tau=0.85": {
+      "documents": 0.24814471243042668,
+      "url": 0.22974948713717108,
+      "title_date": 0.24329964670821794,
+      "title": 0.24156888901172174,
+      "lsh": 0.24777553707310862,
+      "mixture": 0.235989480284368,
+      "outlet": 0.25652402951621145
+    },
+    "tau=0.90": {
+      "documents": 0.24823747680890532,
+      "url": 0.22977056237840607,
+      "title_date": 0.24344602031728652,
+      "title": 0.24171933669094398,
+      "lsh": 0.24810386876738444,
+      "mixture": 0.23607721535896653,
+      "outlet": 0.2556147520198453
+    },
+    "tau=0.95": {
+      "documents": 0.25092764378478655,
+      "url": 0.23246827080707286,
+      "title_date": 0.24507273918420325,
+      "title": 0.24334634373831948,
+      "lsh": 0.25065372285637655,
+      "mixture": 0.23822081394296107,
+      "outlet": 0.25710522692438065
+    },
+    "url": {
+      "documents": 0.2520408163265304,
+      "url": 0.2297663364499269,
+      "title_date": 0.24573453641833848,
+      "title": 0.244781599955754,
+      "lsh": 0.25097692060581955,
+      "mixture": 0.23760471756479387,
+      "outlet": 0.25852170045021017
+    },
+    "title": {
+      "documents": 0.2502782931354359,
+      "url": 0.23212182916720048,
+      "title_date": 0.24591539179410551,
+      "title": 0.244192032175994,
+      "lsh": 0.25045481938705316,
+      "mixture": 0.23849108457952115,
+      "outlet": 0.25948579673130895
+    },
+    "outlet": {
+      "documents": 0.2899814471243041,
+      "url": 0.2669883193674211,
+      "title_date": 0.2852038946029098,
+      "title": 0.28348997548626076,
+      "lsh": 0.2884797817882858,
+      "mixture": 0.27565018395671675,
+      "outlet": 0.2682292928669726
+    }
+  },
+  "table3": [
+    0.246947360517919,
+    0.2471615194032268,
+    0.24557961689590949,
+    0.24344602031728652,
+    0.2424976226764511,
+    0.24244386291914893,
+    0.2852038946029098,
+    0.2889584590833698,
+    0.2900684073556147,
+    0.26161148418750635,
+    0.2607154884690679,
+    0.27588315518604706
+  ],
+  "coverage": {
+    "candidate_construction_blind_to_reference": true,
+    "n_records": 948,
+    "n_story_ids": 416,
+    "topics": [
+      "business",
+      "entertainment",
+      "health",
+      "politics",
+      "sport",
+      "tech"
+    ],
+    "all_law_proportions": {
+      "documents": {
+        "business": 0.27320675105485226,
+        "entertainment": 0.14451476793248944,
+        "health": 0.10126582278481013,
+        "politics": 0.1170886075949367,
+        "sport": 0.24050632911392397,
+        "tech": 0.12341772151898732
+      },
+      "publisher": {
+        "business": 0.2750550425869726,
+        "entertainment": 0.144196091541172,
+        "health": 0.09971594748676112,
+        "politics": 0.11568175333549036,
+        "sport": 0.24108862138072168,
+        "tech": 0.12426254366888238
+      },
+      "content050": {
+        "business": 0.3045045045045045,
+        "entertainment": 0.14054054054054055,
+        "health": 0.1,
+        "politics": 0.10945945945945945,
+        "sport": 0.21081081081081082,
+        "tech": 0.1346846846846847
+      },
+      "content070": {
+        "business": 0.27657266811279835,
+        "entertainment": 0.14533622559652928,
+        "health": 0.10303687635574837,
+        "politics": 0.11822125813449025,
+        "sport": 0.23535791757049895,
+        "tech": 0.12147505422993492
+      },
+      "reference": {
+        "business": 0.25,
+        "entertainment": 0.14423076923076922,
+        "health": 0.12980769230769232,
+        "politics": 0.11778846153846154,
+        "sport": 0.2139423076923077,
+        "tech": 0.14423076923076922
+      }
+    },
+    "content_linkage_diagnostics": {
+      "content050": {
+        "threshold": 0.5,
+        "clusters": 740,
+        "largest_group": 9,
+        "edge_count": 242,
+        "non_singleton_groups": 136,
+        "true_positive_pairs": 205,
+        "predicted_pairs": 338,
+        "reference_pairs": 701,
+        "pair_precision": 0.606508875739645,
+        "pair_recall": 0.29243937232524964
+      },
+      "content070": {
+        "threshold": 0.7,
+        "clusters": 922,
+        "largest_group": 2,
+        "edge_count": 26,
+        "non_singleton_groups": 26,
+        "true_positive_pairs": 18,
+        "predicted_pairs": 26,
+        "reference_pairs": 701,
+        "pair_precision": 0.6923076923076923,
+        "pair_recall": 0.025677603423680456
+      }
+    },
+    "sets": [
+      {
+        "set": "baseline",
+        "candidate_names": [
+          "documents",
+          "publisher"
+        ],
+        "candidate_proportions": {
+          "documents": {
+            "business": 0.27320675105485226,
+            "entertainment": 0.14451476793248944,
+            "health": 0.10126582278481013,
+            "politics": 0.1170886075949367,
+            "sport": 0.24050632911392397,
+            "tech": 0.12341772151898732
+          },
+          "publisher": {
+            "business": 0.2750550425869726,
+            "entertainment": 0.144196091541172,
+            "health": 0.09971594748676112,
+            "politics": 0.11568175333549036,
+            "sport": 0.24108862138072168,
+            "tech": 0.12426254366888238
+          }
+        },
+        "candidate_ranges": {
+          "business": [
+            0.27320675105485226,
+            0.2750550425869726
+          ],
+          "entertainment": [
+            0.144196091541172,
+            0.14451476793248944
+          ],
+          "health": [
+            0.09971594748676112,
+            0.10126582278481013
+          ],
+          "politics": [
+            0.11568175333549036,
+            0.1170886075949367
+          ],
+          "sport": [
+            0.24050632911392397,
+            0.24108862138072168
+          ],
+          "tech": [
+            0.12341772151898732,
+            0.12426254366888238
+          ]
+        },
+        "epsilon": 0.1285601265822785,
+        "policies": {
+          "radius_optimal": {
+            "R": 0.018987341772151937,
+            "B": 0.018987341772151903,
+            "TV_to_reference": 0.13024609951498062,
+            "proportions": {
+              "business": 0.27413089682091246,
+              "entertainment": 0.1443554297368307,
+              "health": 0.10049088513578562,
+              "politics": 0.11638518046521351,
+              "sport": 0.24079747524732287,
+              "tech": 0.12384013259393485
+            },
+            "topic_error_pp": {
+              "business": 2.413089682091246,
+              "entertainment": 0.012466050606146917,
+              "health": -2.9316807171906696,
+              "politics": -0.1403281073248025,
+              "sport": 2.685516755501516,
+              "tech": -2.0390636636834367
+            },
+            "max_abs_topic_error_pp": 2.9316807171906696,
+            "health_candidate_radius_band": [
+              0.08150354336363369,
+              0.11947822690793755
+            ],
+            "health_reference_outside_candidate_radius_band": true,
+            "reference_outside_candidate_radius": true,
+            "R_plus_epsilon": 0.14754746835443044
+          },
+          "uniform": {
+            "R": 0.018987341772151937,
+            "B": 0.018987341772151903,
+            "TV_to_reference": 0.13024609951498062,
+            "proportions": {
+              "business": 0.27413089682091246,
+              "entertainment": 0.1443554297368307,
+              "health": 0.10049088513578562,
+              "politics": 0.11638518046521351,
+              "sport": 0.24079747524732287,
+              "tech": 0.12384013259393485
+            },
+            "topic_error_pp": {
+              "business": 2.413089682091246,
+              "entertainment": 0.012466050606146917,
+              "health": -2.9316807171906696,
+              "politics": -0.1403281073248025,
+              "sport": 2.685516755501516,
+              "tech": -2.0390636636834367
+            },
+            "max_abs_topic_error_pp": 2.9316807171906696,
+            "health_candidate_radius_band": [
+              0.08150354336363369,
+              0.11947822690793755
+            ],
+            "health_reference_outside_candidate_radius_band": true,
+            "reference_outside_candidate_radius": true,
+            "R_plus_epsilon": 0.14754746835443044
+          }
+        }
+      },
+      {
+        "set": "content050",
+        "candidate_names": [
+          "documents",
+          "publisher",
+          "content050"
+        ],
+        "candidate_proportions": {
+          "documents": {
+            "business": 0.27320675105485226,
+            "entertainment": 0.14451476793248944,
+            "health": 0.10126582278481013,
+            "politics": 0.1170886075949367,
+            "sport": 0.24050632911392397,
+            "tech": 0.12341772151898732
+          },
+          "publisher": {
+            "business": 0.2750550425869726,
+            "entertainment": 0.144196091541172,
+            "health": 0.09971594748676112,
+            "politics": 0.11568175333549036,
+            "sport": 0.24108862138072168,
+            "tech": 0.12426254366888238
+          },
+          "content050": {
+            "business": 0.3045045045045045,
+            "entertainment": 0.14054054054054055,
+            "health": 0.1,
+            "politics": 0.10945945945945945,
+            "sport": 0.21081081081081082,
+            "tech": 0.1346846846846847
+          }
+        },
+        "candidate_ranges": {
+          "business": [
+            0.27320675105485226,
+            0.3045045045045045
+          ],
+          "entertainment": [
+            0.14054054054054055,
+            0.14451476793248944
+          ],
+          "health": [
+            0.09971594748676112,
+            0.10126582278481013
+          ],
+          "politics": [
+            0.10945945945945945,
+            0.1170886075949367
+          ],
+          "sport": [
+            0.21081081081081082,
+            0.24108862138072168
+          ],
+          "tech": [
+            0.12341772151898732,
+            0.1346846846846847
+          ]
+        },
+        "epsilon": 0.1285601265822785,
+        "policies": {
+          "radius_optimal": {
+            "R": 0.0895427072642263,
+            "B": 0.10851971709130603,
+            "TV_to_reference": 0.1299895247988574,
+            "proportions": {
+              "business": 0.28977761729425566,
+              "entertainment": 0.14236858369556882,
+              "health": 0.0998579529454232,
+              "politics": 0.11257106198577849,
+              "sport": 0.2259519329978652,
+              "tech": 0.1294728510811085
+            },
+            "topic_error_pp": {
+              "business": 3.9777617294255663,
+              "entertainment": -0.18621855352004002,
+              "health": -2.994973936226912,
+              "politics": -0.521739955268305,
+              "sport": 1.2009625305557492,
+              "tech": -1.475791814966071
+            },
+            "max_abs_topic_error_pp": 3.9777617294255663,
+            "health_candidate_radius_band": [
+              0.010315245681196891,
+              0.18940066020964952
+            ],
+            "health_reference_outside_candidate_radius_band": false,
+            "reference_outside_candidate_radius": true,
+            "R_plus_epsilon": 0.2181028338465048
+          },
+          "uniform": {
+            "R": 0.1193815360307133,
+            "B": 0.11938153603071332,
+            "TV_to_reference": 0.11944592956418881,
+            "proportions": {
+              "business": 0.2842554327154432,
+              "entertainment": 0.14308380000473397,
+              "health": 0.10032725675719041,
+              "politics": 0.11407660679662883,
+              "sport": 0.23080192043515219,
+              "tech": 0.12745498329085148
+            },
+            "topic_error_pp": {
+              "business": 3.425543271544318,
+              "entertainment": -0.11469692260352438,
+              "health": -2.948043555050191,
+              "politics": -0.3711854741832707,
+              "sport": 1.6859612742844476,
+              "tech": -1.6775785939917742
+            },
+            "max_abs_topic_error_pp": 3.425543271544318,
+            "health_candidate_radius_band": [
+              0.0,
+              0.21970879278790373
+            ],
+            "health_reference_outside_candidate_radius_band": false,
+            "reference_outside_candidate_radius": true,
+            "R_plus_epsilon": 0.2479416626129918
+          }
+        }
+      },
+      {
+        "set": "content070",
+        "candidate_names": [
+          "documents",
+          "publisher",
+          "content070"
+        ],
+        "candidate_proportions": {
+          "documents": {
+            "business": 0.27320675105485226,
+            "entertainment": 0.14451476793248944,
+            "health": 0.10126582278481013,
+            "politics": 0.1170886075949367,
+            "sport": 0.24050632911392397,
+            "tech": 0.12341772151898732
+          },
+          "publisher": {
+            "business": 0.2750550425869726,
+            "entertainment": 0.144196091541172,
+            "health": 0.09971594748676112,
+            "politics": 0.11568175333549036,
+            "sport": 0.24108862138072168,
+            "tech": 0.12426254366888238
+          },
+          "content070": {
+            "business": 0.27657266811279835,
+            "entertainment": 0.14533622559652928,
+            "health": 0.10303687635574837,
+            "politics": 0.11822125813449025,
+            "sport": 0.23535791757049895,
+            "tech": 0.12147505422993492
+          }
+        },
+        "candidate_ranges": {
+          "business": [
+            0.27320675105485226,
+            0.27657266811279835
+          ],
+          "entertainment": [
+            0.144196091541172,
+            0.14533622559652928
+          ],
+          "health": [
+            0.09971594748676112,
+            0.10303687635574837
+          ],
+          "politics": [
+            0.11568175333549036,
+            0.11822125813449025
+          ],
+          "sport": [
+            0.23535791757049895,
+            0.24108862138072168
+          ],
+          "tech": [
+            0.12147505422993492,
+            0.12426254366888238
+          ]
+        },
+        "epsilon": 0.1285601265822785,
+        "policies": {
+          "radius_optimal": {
+            "R": 0.02339693025701707,
+            "B": 0.02807122911062053,
+            "TV_to_reference": 0.12865236726311258,
+            "proportions": {
+              "business": 0.27495527311668466,
+              "entertainment": 0.14460364032121856,
+              "health": 0.1010787289484609,
+              "politics": 0.11678651720486243,
+              "sport": 0.239328271558865,
+              "tech": 0.12324756884990849
+            },
+            "topic_error_pp": {
+              "business": 2.495527311668466,
+              "entertainment": 0.03728710904493393,
+              "health": -2.8728963359231416,
+              "politics": -0.10019443335991113,
+              "sport": 2.538596386655728,
+              "tech": -2.0983200380860727
+            },
+            "max_abs_topic_error_pp": 2.8728963359231416,
+            "health_candidate_radius_band": [
+              0.07768179869144383,
+              0.12447565920547797
+            ],
+            "health_reference_outside_candidate_radius_band": true,
+            "reference_outside_candidate_radius": true,
+            "R_plus_epsilon": 0.15195705683929556
+          },
+          "uniform": {
+            "R": 0.027824650857957683,
+            "B": 0.028256181352779283,
+            "TV_to_reference": 0.12802288774606807,
+            "proportions": {
+              "business": 0.27494482058487435,
+              "entertainment": 0.14468236169006354,
+              "health": 0.10133954887577319,
+              "politics": 0.11699720635497242,
+              "sport": 0.23898428935504817,
+              "tech": 0.1230517731392682
+            },
+            "topic_error_pp": {
+              "business": 2.494482058487435,
+              "entertainment": 0.045159245929432545,
+              "health": -2.846814343191913,
+              "politics": -0.07912551834891174,
+              "sport": 2.5041981662740467,
+              "tech": -2.117899609150102
+            },
+            "max_abs_topic_error_pp": 2.846814343191913,
+            "health_candidate_radius_band": [
+              0.07351489801781551,
+              0.1291641997337309
+            ],
+            "health_reference_outside_candidate_radius_band": true,
+            "reference_outside_candidate_radius": true,
+            "R_plus_epsilon": 0.15638477744023618
+          }
+        }
+      }
+    ],
+    "scope": "finite released collection and supplied correspondence; no population sampling or CC-News detector validation"
+  },
+  "H": [
+    {
+      "setting": "CC / Linear",
+      "n_test": 2156,
+      "test_clusters": 1885,
+      "delta_eval_pp": -0.05406178352180269,
+      "delta_fit_pp": -0.3618568977194069,
+      "H_pp": -0.3077951141976042,
+      "H_percentile95_pp": [
+        -0.51648179717872,
+        0.4612908845554954
+      ],
+      "H_SE_pp": 0.2538009778812085,
+      "joint_covariance_pp2": [
+        [
+          0.11502795188519796,
+          0.0005862706417844431
+        ],
+        [
+          0.0005862706417844431,
+          0.0219960451560483
+        ]
+      ],
+      "interval_contains_zero": true,
+      "component_percentile95_pp": [
+        [
+          -0.7108819824651363,
+          -0.6496226964787686
+        ],
+        [
+          0.6028125355312527,
+          -0.07362246069987793
+        ]
+      ],
+      "conditional_scope": "fixed fitted models, partitions and split; post-hoc descriptive percentile interval"
+    },
+    {
+      "setting": "CC / MLP",
+      "n_test": 2156,
+      "test_clusters": 1885,
+      "delta_eval_pp": -0.10428518097801154,
+      "delta_fit_pp": -0.39881664035373066,
+      "H_pp": -0.2945314593757191,
+      "H_percentile95_pp": [
+        -0.59863754903923,
+        0.48400500530964596
+      ],
+      "H_SE_pp": 0.27954886930972406,
+      "joint_covariance_pp2": [
+        [
+          0.11655432767885959,
+          0.0002815555050622661
+        ],
+        [
+          0.0002815555050622661,
+          0.03304297152553218
+        ]
+      ],
+      "interval_contains_zero": true,
+      "component_percentile95_pp": [
+        [
+          -0.7620882835973916,
+          -0.7613900701425089
+        ],
+        [
+          0.5603409343253104,
+          -0.053654902721317156
+        ]
+      ],
+      "conditional_scope": "fixed fitted models, partitions and split; post-hoc descriptive percentile interval"
+    },
+    {
+      "setting": "BBC / Linear",
+      "n_test": 440,
+      "test_clusters": 411,
+      "delta_eval_pp": 0.2224183583406883,
+      "delta_fit_pp": 0.0,
+      "H_pp": 0.2224183583406883,
+      "H_percentile95_pp": [
+        0.10711967555024661,
+        0.3700698613636105
+      ],
+      "H_SE_pp": 0.06770915082928003,
+      "joint_covariance_pp2": [
+        [
+          0.004584529106022192,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "interval_contains_zero": false,
+      "component_percentile95_pp": [
+        [
+          0.10711967555024661,
+          0.0
+        ],
+        [
+          0.3700698613636105,
+          0.0
+        ]
+      ],
+      "conditional_scope": "fixed fitted models, partitions and split; post-hoc descriptive percentile interval"
+    },
+    {
+      "setting": "BBC / MLP",
+      "n_test": 440,
+      "test_clusters": 411,
+      "delta_eval_pp": 0.2038834951456306,
+      "delta_fit_pp": 0.0970873786407767,
+      "H_pp": 0.10679611650485389,
+      "H_percentile95_pp": [
+        -0.16447560120422375,
+        0.3057287408299185
+      ],
+      "H_SE_pp": 0.11694756955519206,
+      "joint_covariance_pp2": [
+        [
+          0.0040921996275198064,
+          2.0489098372608616e-06
+        ],
+        [
+          2.0489098372608616e-06,
+          0.009588632217021198
+        ]
+      ],
+      "interval_contains_zero": true,
+      "component_percentile95_pp": [
+        [
+          0.09576638687248873,
+          0.0
+        ],
+        [
+          0.345588475543725,
+          0.2919708029197082
+        ]
+      ],
+      "conditional_scope": "fixed fitted models, partitions and split; post-hoc descriptive percentile interval"
+    }
+  ]
+}

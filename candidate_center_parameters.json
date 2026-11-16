@@ -1,0 +1,118 @@
+{
+  "baseline": {
+    "candidate_names": [
+      "documents",
+      "publisher"
+    ],
+    "pi": {
+      "documents": 0.5,
+      "publisher": 0.5
+    },
+    "R": 0.018987341772151937,
+    "B": 0.018987341772151903,
+    "D": [
+      [
+        0.0,
+        0.037974683544303806
+      ],
+      [
+        0.037974683544303806,
+        0.0
+      ]
+    ],
+    "uniform_pi": {
+      "documents": 0.5,
+      "publisher": 0.5
+    },
+    "uniform_R": 0.018987341772151937,
+    "uniform_B": 0.018987341772151903,
+    "feasible_set": "convex mixture of declared candidate laws",
+    "compressed_density_rows": 3,
+    "primal_dual_gap": 6.938893903907228e-18,
+    "dual_stationarity_linf": 1.3877787807814457e-17
+  },
+  "content050": {
+    "candidate_names": [
+      "documents",
+      "publisher",
+      "content050"
+    ],
+    "pi": {
+      "documents": 0.0,
+      "publisher": 0.5000732187056223,
+      "content050": 0.49992678129437745
+    },
+    "R": 0.0895427072642263,
+    "B": 0.10851971709130603,
+    "D": [
+      [
+        0.0,
+        0.037974683544303806,
+        0.1790854145284525
+      ],
+      [
+        0.037974683544303806,
+        0.0,
+        0.17905919356368744
+      ],
+      [
+        0.1790854145284525,
+        0.17905919356368744,
+        0.0
+      ]
+    ],
+    "uniform_pi": {
+      "documents": 0.3333333333333333,
+      "publisher": 0.3333333333333333,
+      "content050": 0.3333333333333333
+    },
+    "uniform_R": 0.1193815360307133,
+    "uniform_B": 0.11938153603071332,
+    "feasible_set": "convex mixture of declared candidate laws",
+    "compressed_density_rows": 24,
+    "primal_dual_gap": 6.938893903907228e-17,
+    "dual_stationarity_linf": 4.440892098500626e-16
+  },
+  "content070": {
+    "candidate_names": [
+      "documents",
+      "publisher",
+      "content070"
+    ],
+    "pi": {
+      "documents": 0.28262306023694356,
+      "publisher": 0.4389154013015183,
+      "content070": 0.2784615384615382
+    },
+    "R": 0.02339693025701707,
+    "B": 0.02807122911062053,
+    "D": [
+      [
+        0.0,
+        0.037974683544303806,
+        0.02665275451458493
+      ],
+      [
+        0.037974683544303806,
+        0.0,
+        0.046793860514034044
+      ],
+      [
+        0.02665275451458493,
+        0.046793860514034044,
+        0.0
+      ]
+    ],
+    "uniform_pi": {
+      "documents": 0.3333333333333333,
+      "publisher": 0.3333333333333333,
+      "content070": 0.3333333333333333
+    },
+    "uniform_R": 0.027824650857957683,
+    "uniform_B": 0.028256181352779283,
+    "feasible_set": "convex mixture of declared candidate laws",
+    "compressed_density_rows": 6,
+    "primal_dual_gap": 1.3877787807814457e-17,
+    "dual_stationarity_linf": 1.3877787807814457e-17
+  }
+}

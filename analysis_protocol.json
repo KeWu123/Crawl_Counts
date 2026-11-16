@@ -1,0 +1,79 @@
+{
+  "id": "REVIEW_20261116_v1",
+  "date": "2026-11-16",
+  "prior_baseline_results_already_seen": true,
+  "content": {
+    "dataset": "all 948 released 3Sources term-frequency columns, ordered BBC/Guardian/Reuters and native column order",
+    "allowed_feature_members": [
+      ".terms",
+      ".mtx"
+    ],
+    "curator_story_IDs_and_topics_used_in_construction": false,
+    "vocabulary": "union of exact stripped released stem strings; align each view by term identity, not row number",
+    "preprocessing": "released Porter stemming, stopword and term-frequency filtering retained; no invented raw text",
+    "tf": "1+log(tf) for positive entries",
+    "idf": "1+log((1+948)/(1+document_frequency))",
+    "normalization": "L2 per document; zero vectors are isolated singletons",
+    "similarity": "dot product of normalized pooled TF-IDF features, all record pairs",
+    "primary_threshold": 0.5,
+    "sensitivity_threshold": 0.7,
+    "partition": "undirected connected components of edges with cosine >= threshold; diagonal excluded",
+    "candidate_sets": {
+      "baseline": [
+        "documents",
+        "publisher"
+      ],
+      "content050": [
+        "documents",
+        "publisher",
+        "content050"
+      ],
+      "content070": [
+        "documents",
+        "publisher",
+        "content070"
+      ]
+    },
+    "law": "uniform group then uniform record in group, 1/(K*m)",
+    "center": "minimize maximum full-record TV over convex mixtures of the declared candidate laws; pi in simplex; no free-center mass optimization",
+    "secondary_center": "uniform candidate mixture; report as secondary, never choose using reference results",
+    "construction_freeze": "partitions, candidate laws, centers and checksums saved before evaluation reads .docs or .clist",
+    "reference": "uniform provided story ID then uniform record for that ID; provided linkage is not universal semantic ground truth",
+    "metrics": [
+      "K, largest group, supplied-linkage pair precision/recall",
+      "R, B, TV(center,reference), epsilon",
+      "all six topic errors, exact candidate topic ranges, health illustration"
+    ],
+    "outcome_policy": "retain both thresholds and all outcomes; no threshold search or reference-based selection; coverage may improve or remain poor"
+  },
+  "matched_H": {
+    "settings": [
+      "CC / Linear",
+      "CC / MLP",
+      "BBC / Linear",
+      "BBC / MLP"
+    ],
+    "epoch": 96,
+    "seeds": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "delta_eval": "e(document-trained,content-score)-e(document-trained,document-score)",
+    "delta_fit": "e(content-trained,content-score)-e(document-trained,content-score)",
+    "H": "abs(delta_eval)-abs(delta_fit)",
+    "paired_bootstrap": "same resampled test-cluster counts applied jointly to both models and both laws; recompute every ratio denominator",
+    "clusters": "CC title+day; BBC union(title,content) test groups",
+    "resamples": 5000,
+    "seed": 20261116,
+    "interval": "unadjusted conditional percentile 95%, models/partitions/splits fixed; descriptive for nonsmooth absolute contrast",
+    "selection": "post-hoc review-driven diagnostic, not a preregistered confirmatory test; no cross-corpus reversal significance claim"
+  },
+  "new_training_fits": 0,
+  "versions": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  }
+}

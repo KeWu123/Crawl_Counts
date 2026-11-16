@@ -1,0 +1,56 @@
+{
+  "status": "numerically_certified_optimum",
+  "n_documents": 50083,
+  "n_exact_density_groups": 742,
+  "n_variables": 2973,
+  "n_inequalities": 5940,
+  "pi": {
+    "url": 0.45817906324362995,
+    "title_date": 0.11540906290740098,
+    "title": 0.36317266252214253,
+    "lsh": 0.0632392113268265
+  },
+  "R": 0.05886668905351596,
+  "B": 0.06844747506671506,
+  "per_candidate_TV": {
+    "url": 0.05886668905351596,
+    "title_date": 0.046859656566454154,
+    "title": 0.05886668905351128,
+    "lsh": 0.0588666890534909
+  },
+  "candidate_D": [
+    [
+      0.0,
+      0.1009166408990406,
+      0.11750498740975472,
+      0.10256985738953178
+    ],
+    [
+      0.1009166408990406,
+      0.0,
+      0.021837412278835854,
+      0.03435119262491916
+    ],
+    [
+      0.11750498740975472,
+      0.021837412278835854,
+      0.0,
+      0.04815250910931904
+    ],
+    [
+      0.10256985738953178,
+      0.03435119262491916,
+      0.04815250910931904,
+      0.0
+    ]
+  ],
+  "diameter_half": 0.05875249370487736,
+  "primal_objective": 0.058866689053467244,
+  "dual_objective": 0.05886668905346715,
+  "duality_gap": 9.71445146547012e-17,
+  "primal_feasibility_violation": 1.709743457922741e-14,
+  "compressed_R": 0.0588666890534674,
+  "seconds": 0.5220055000390857,
+  "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "scope": "floating-point LP certificate at reported tolerances; not a symbolic exact proof or an external-target guarantee"
+}
